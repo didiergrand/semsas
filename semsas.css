@@ -1,41 +1,84 @@
-body,table, tr, td, p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:13px !important;
-	line-height:21px
-}
-h1,h2,h3,h4,h5{
-	font-size:21px
-	
-}
-h2{    
-	color: rgb(102, 0, 102);
-    font-weight: normal;
-	margin-top:40px;
-	margin-bottom:20px;
-}
-img{
-	max-width:100%;
-	height:auto
-}
-.legend{
-	font-size:11px;
-	font-style:italic;
-	line-height:14px;
-	margin-top:10px;
+body {
+  margin: 0;
+  background: #fff;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
 
+h2 {
+  color: #660066;
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 40px 0 16px;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+a {
+  color: #660066;
+}
 
+.logo {
+  display: block;
+  margin: 0 auto;
+}
 
+.historique li {
+  margin-bottom: 12px;
+}
 
+figure {
+  margin: 24px 0;
+  text-align: center;
+}
 
+figcaption {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #555;
+  margin-top: 6px;
+}
 
+/* Listes « libellé : valeur » (comité, musiciens, agenda, contact) */
+.liste {
+  display: grid;
+  grid-template-columns: minmax(0, 15em) 1fr;
+  gap: 6px 16px;
+  margin: 0;
+}
 
+.liste dt {
+  font-weight: bold;
+  grid-column: 1;
+}
 
+.liste dd {
+  margin: 0;
+  grid-column: 2;
+}
 
+@media (max-width: 500px) {
+  .liste {
+    grid-template-columns: 1fr;
+  }
 
+  .liste dt,
+  .liste dd {
+    grid-column: 1;
+  }
 
-
-
+  .liste dt {
+    margin-top: 8px;
+  }
+}
